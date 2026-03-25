@@ -1,2 +1,0 @@
-configuration_name,data_name,data_type,cell_expr_thres1,cell_expr_thres2,cell_type_exclusion
-CGS_v3,Prepared_sc_Data,.h5ad,15;5,10;10,Erythrocytes,Plasma cells,Metabolically active Monocytes,Platelets
