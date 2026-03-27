@@ -1,0 +1,13 @@
+
+
+ You provided these parameters:
+ YAML file:	/ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/zUMIs/my_config.yaml
+ zUMIs directory:		/ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/zUMIs
+ STAR executable		/ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/star_install/STAR-2.7.11b/source/STAR
+ samtools executable		/home/icb/bhavishya.nelakuditi/local/bin/samtools
+ pigz executable		/ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/pigz-2.4/pigz
+ Rscript executable		/home/icb/bhavishya.nelakuditi/miniconda3/bin/Rscript
+ RAM limit:   100
+ zUMIs version 2.9.7e 
+
+

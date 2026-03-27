@@ -1,0 +1,57 @@
+project: bulk_seq_cgs_pto9
+sequence_files:
+  file1:
+    name: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/kaiser20242011_pto9/merged_pto9_R1.fastq.gz
+    base_definition:
+      - BC(1-12)
+      - UMI(13-28)
+  file2:
+    name: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/kaiser20242011_pto9/merged_pto9_R2.fastq.gz
+    base_definition:
+      - cDNA(2-93)
+reference:
+  STAR_index: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/star_index_91
+  GTF_file: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/Homo_sapiens.GRCh38.109.gtf
+  exon_extension: ""
+  extension_length: 0
+  scaffold_length_min: 0
+  additional_STAR_params: ""
+out_dir: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/zUMI_output_pto9
+num_threads: 15
+mem_limit: 100
+filter_cutoffs:
+  BC_filter:
+    num_bases: 3
+    phred: 20
+  UMI_filter:
+    num_bases: 4
+    phred: 20
+barcodes:
+  barcode_num: ~
+  barcode_file: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/zUMIs/barcodes.txt
+  barcode_sharing: ""
+  automatic: no
+  BarcodeBinning: 1
+  nReadsperCell: 100
+  demultiplex: yes
+
+counting_opts:
+  introns: yes
+  downsampling: '500000,1000000,3000000'
+  strand: 1
+  twoPass: yes
+  primaryHit: yes
+  Ham_Dist: 0
+  write_ham: no
+
+make_stats: yes
+which_Stage: Filtering
+samtools_exec: /home/icb/bhavishya.nelakuditi/local/bin/samtools
+pigz_exec: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/pigz-2.4/pigz
+STAR_exec: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/star_install/STAR-2.7.11b/source/STAR
+Rscript_exec: /home/icb/bhavishya.nelakuditi/miniconda3/bin/Rscript
+zUMIs_directory: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/zUMIs
+barcodeIDFUN: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/zUMIs/barcodeIDFUN.R
+runfeatureCountFUN: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/zUMIs/runfeatureCountFUN.R
+statsFUN: /ictstr01/home/icb/bhavishya.nelakuditi/bulk_seq/new_counts/zUMIs/statsFUN.R
+read_layout: SE
