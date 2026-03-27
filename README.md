@@ -1,5 +1,5 @@
 # cardiogenic_shock_mofa
-This repository contains the data, code, and figures to recreate the analysis mentioned in the manuscript "Dissociation of cellular immunity from the systemic pro-inflammatory state is a hallmark of refractory cardiogenic shock"
+This repository contains the data, code, and figures of the analysis mentioned in the manuscript "Dissociation of cellular immunity from the systemic pro-inflammatory state is a hallmark of refractory cardiogenic shock"
 
 
 
